@@ -1,0 +1,375 @@
+
+
+body {
+	/*background-color: #464242;*/
+	background-image: url("./images/pink-dust.png");
+	color: #FFFFF0;
+	margin: 0;
+    padding: 0;
+    width: 100%;
+
+}
+
+.headline-title {
+	/*margin: auto;*/
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.social {
+	padding-top: 96px;
+    margin-left: 24px;
+}
+
+.social a {
+	color: #FFFFF0;
+	font-size: 20px;
+	margin: 2px 4px;
+
+	/*remove underline*/
+	text-decoration: none;
+}
+
+.title {
+	font-weight: bold;
+	text-align: center;
+	font-size: 70px;
+	margin-bottom: 14px;
+	margin-left: 80px;
+}
+
+.introduction {
+	text-align: right;
+    width: 80%;
+    margin: auto;  
+}
+
+.introduction p {
+	line-height: 140%;
+	color: #C0C0C0;
+	font-size: 18px;
+}
+
+
+/******* MAIN BODY *******/
+.main-body {
+	display: flex;
+  	flex-direction: row;
+	  text-align: center;
+	  justify-content: center;
+}
+
+.container {
+	/*use flexbox to display info and image horizontally*/
+	display: flex;
+  	flex-direction: row;
+
+  	width: 900px;
+	height: 350px;
+	  
+  	border: #FFFFF0 0.5px solid;
+	border-radius: 4px;
+	  
+  	margin-bottom: 40px;
+  	margin-top: 40px;
+
+  	background-color: #4f4848;
+  	
+}
+
+.info {
+	position: relative;
+
+	margin: 0 30px 6px 40px;
+
+	text-align: left;
+}
+
+.headline {
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+.date {
+	margin-bottom: 4px;
+}
+
+p {
+	font-family: 'Inconsolata', monospace;
+}
+
+img {
+	border-radius: 4px;
+}
+
+
+.profile-image {
+	border-radius: 50%;
+	border: #FFFFF0 0.5px solid;
+}
+
+
+.call-to-action {
+	position: absolute;
+	 bottom: 0;
+	 
+	height: 20px;
+	width: 490px;
+
+	padding-top: 10px;
+
+	border-top: solid 0.5px #FFFFF0;
+}
+
+.call-to-action a {
+	text-decoration: none;
+
+	font-weight: bold;
+	font-size: 16px;
+
+	color: #FFFFF0;
+}
+
+.call-to-action a:hover {
+	color: #2ecc71;
+}
+
+.list-of-links a {
+	text-decoration: none;
+	color: #FFFFF0;
+	font-size: 16px;
+}
+
+.list-of-links a:hover {
+	color: #2ecc71;
+}
+
+/********* RESPONSIVE  *********/
+/* Portrait and Landscape */
+/* iphone 6/7/8 */
+@media only screen 
+	and (min-device-width: 320px) 
+	and (max-device-width: 812px) 
+	and (-webkit-min-device-pixel-ratio: 3) {
+
+		/* I cant find the way to make the smaller screen take the whole width*/
+		/*hence i added margin-left in to make sure the page is in the middle*/
+		body{
+				margin-left: 2%;
+				font-size: 26px;
+		}
+
+
+		.introduction {
+			text-align: center;
+		}
+
+		.introduction p {
+			font-size: 16px;
+		}
+
+		.main-body {
+				display: flex;
+				flex-direction: column;
+		}
+
+		.profile-image {
+			width: 400px;
+			height: 420px;
+		}
+
+		.graph-line p {
+			font-size: 26px;
+		}
+
+		.github {
+				width: 60px;
+		}
+
+		.freecodecamp {
+				width: 260px;
+				margin-right: 20px;
+		}
+
+		.codewars {
+			width: 60px;
+		}
+
+		.timeline {
+			/*margin: auto;*/
+				width: 100%;
+		}
+
+		.container {
+			/* move the container in the middle of timeline*/
+			margin-left: 3%;
+			height: 800px;
+
+		}
+
+		.image {
+			display: none;
+		}
+
+		.call-to-action {
+			width: 820px;
+		}
+
+		.paragraph {
+			font-size: 34px;
+		}
+
+		.headline {
+			font-size: 46px;
+		}
+
+		.date {
+			font-size: 36px;
+		}
+
+		.headline-title {
+			flex-direction: column;
+			text-align: center;
+		}
+
+		.call-to-action {
+			font-size: 30px;
+		}
+
+		.call-to-action a {
+			font-size: 32px;
+		}
+
+		.social {
+				text-align: center;
+			padding-top: 0;
+		}
+
+		.intro-headline {
+			font-size: 48px;
+		}
+
+		.coding-groups {
+			height: 540px;
+		}
+
+		.code-bar {
+			height: 860px;
+		}
+}
+
+/* iphone 4/5 */
+@media only screen 
+	and (min-device-width: 320px) 
+	and (max-device-width: 568px)
+	and (-webkit-min-device-pixel-ratio: 2) {
+	body{
+			margin-left: 2%;
+			font-size: 26px;
+	}
+
+
+	.introduction {
+		text-align: center;
+	}
+
+	.introduction p {
+		font-size: 16px;
+	}
+
+	.main-body {
+			display: flex;
+			flex-direction: column;
+	}
+
+	.profile-image {
+		width: 400px;
+		height: 420px;
+	}
+
+	.graph-line p {
+		font-size: 26px;
+	}
+
+	.github {
+			width: 60px;
+	}
+
+	.freecodecamp {
+			width: 260px;
+			margin-right: 20px;
+	}
+
+	.codewars {
+		width: 60px;
+	}
+
+	.timeline {
+		/*margin: auto;*/
+			width: 100%;
+	}
+
+	.container {
+		/* move the container in the middle of timeline*/
+		margin-left: 3%;
+		height: 800px;
+
+	}
+
+	.image {
+		display: none;
+	}
+
+	.call-to-action {
+		width: 820px;
+	}
+
+	.paragraph {
+		font-size: 34px;
+	}
+
+	.headline {
+		font-size: 46px;
+	}
+
+	.date {
+		font-size: 36px;
+	}
+
+	.headline-title {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.call-to-action {
+		font-size: 30px;
+	}
+
+	.call-to-action a {
+		font-size: 32px;
+	}
+
+	.social {
+			text-align: center;
+		padding-top: 0;
+	}
+
+	.intro-headline {
+		font-size: 48px;
+	}
+
+	.coding-groups {
+		height: 540px;
+	}
+
+	.code-bar {
+		height: 860px;
+	}
+}
+
+
+
+
+
+
