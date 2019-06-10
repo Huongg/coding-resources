@@ -81,18 +81,13 @@ body {
 .info {
 	position: relative;
 
-	margin: 0 30px 6px 40px;
+	margin: 30px;
 
 	text-align: left;
 }
 
 .headline {
-	margin-bottom: 0px;
-	margin-top: 0px;
-}
-
-.date {
-	margin-bottom: 4px;
+	margin: 0;
 }
 
 p {
@@ -112,7 +107,7 @@ img {
 
 .call-to-action {
 	position: absolute;
-	 bottom: 0;
+	bottom: 0;
 	 
 	height: 20px;
 	width: 490px;
@@ -120,6 +115,8 @@ img {
 	padding-top: 10px;
 
 	border-top: solid 0.5px #FFFFF0;
+
+	margin: 0;
 }
 
 .call-to-action a {
