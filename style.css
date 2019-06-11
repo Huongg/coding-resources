@@ -1,5 +1,3 @@
-
-
 body {
 	/*background-color: #464242;*/
 	background-image: url("./images/pink-dust.png");
@@ -7,7 +5,7 @@ body {
 	margin: 0;
     padding: 0;
     width: 100%;
-
+	font-family: 'Inconsolata', monospace;
 }
 
 .headline-title {
@@ -15,11 +13,6 @@ body {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-}
-
-.social {
-	padding-top: 96px;
-    margin-left: 24px;
 }
 
 .social a {
@@ -40,7 +33,7 @@ body {
 }
 
 .introduction {
-	text-align: right;
+	text-align: center;
     width: 80%;
     margin: auto;  
 }
@@ -51,13 +44,48 @@ body {
 	font-size: 18px;
 }
 
+.personal-info {
+	display: flex;
+	flex-direction: row;
+
+	justify-content: center;
+}
+
+.personal-info-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	margin: 20px;
+}
+
+.personal-info-wrapper p {
+	color: white;
+}
+
+.profile-picture {
+	width: 100px;
+	height: 100px;
+	
+	margin-bottom: 20px;
+}
+
+.job-title {
+	padding-top: 5px;
+	opacity: 0.85;
+}
+
+.company {
+	color: rgb(153, 200, 232);
+}
+
 
 /******* MAIN BODY *******/
 .main-body {
 	display: flex;
   	flex-direction: row;
-	  text-align: center;
-	  justify-content: center;
+	text-align: center;
+	justify-content: center;
 }
 
 .container {
@@ -238,11 +266,6 @@ img {
 			font-size: 32px;
 		}
 
-		.social {
-				text-align: center;
-			padding-top: 0;
-		}
-
 		.intro-headline {
 			font-size: 48px;
 		}
@@ -345,11 +368,6 @@ img {
 
 	.call-to-action a {
 		font-size: 32px;
-	}
-
-	.social {
-			text-align: center;
-		padding-top: 0;
 	}
 
 	.intro-headline {
